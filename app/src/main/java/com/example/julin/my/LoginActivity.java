@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(username.getText().equals("123456")&&password.getText().equals("123456")){
+                if(username.getText().toString().equals("123456")&&password.getText().toString().equals("123456")){
                     Intent intent = new Intent(LoginActivity.this, CompanyList.class);
                     startActivity(intent);
                 }
