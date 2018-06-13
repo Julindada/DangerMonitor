@@ -56,7 +56,7 @@ public class DataList extends AppCompatActivity {
                 //对返回的数据进行处理
                 Gson gson = new Gson();
 
-//                        Log.d("debug", response);
+                        Log.d("debug", response);
                 nodes = gson.fromJson(response, new TypeToken<List<Point>>() {}.getType());
                 Log.d("debug",response.toString());
 
